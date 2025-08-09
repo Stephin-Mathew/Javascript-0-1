@@ -1,8 +1,8 @@
 # JavaScript Daily Learning 📅
 
-![GitHub last commit](https://img.shields.io/github/last-commit/<Stephin-Mathew>/Javascript-0-1?color=brightgreen&style=for-the-badge)
-![GitHub repo size](https://img.shields.io/github/repo-size/<Stephin-Mathew>/Javascript-0-1?color=blue&style=for-the-badge)
-![GitHub stars](https://img.shields.io/github/stars/<Stephin-Mathew>/Javascript-0-1?color=yellow&style=for-the-badge)
+![GitHub last commit](https://img.shields.io/github/last-commit/Stephin-Mathew/Javascript-0-1?color=brightgreen&style=for-the-badge)
+![GitHub repo size](https://img.shields.io/github/repo-size/Stephin-Mathew/Javascript-0-1?color=blue&style=for-the-badge)
+![GitHub stars](https://img.shields.io/github/stars/Stephin-Mathew/Javascript-0-1?color=yellow&style=for-the-badge)
 
 Welcome to my **JavaScript Daily Learning** repository!  
 This repo documents my journey of learning JavaScript step-by-step by following the **Bro Code** YouTube tutorial.  
