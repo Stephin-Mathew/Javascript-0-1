@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter App</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+        button {
+            padding: 10px 20px;
+            margin: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        #mylabel {
+            font-size: 24px;
+            display: block;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>Simple Counter</h1>
+    <label id="mylabel">0</label>
+    <button id="incbtn">Increase</button>
+    <button id="decbtn">Decrease</button>
+    <button id="rstbtn">Reset</button>
+
+    <script>
+        const inc = document.getElementById("incbtn");
+        const res = document.getElementById("rstbtn");
+        const dec = document.getElementById("decbtn");
+        const lab = document.getElementById("mylabel");
+        let label = 0;
+
+        inc.onclick = function () {
+            label++;
+            lab.textContent = label;
+        }
+        dec.onclick = function () {
+            label--;
+            lab.textContent = label;
+        }
+        res.onclick = function () {
+            label = 0;
+            lab.textContent = label;
+        }
+
+        /*
+        Explanation of Code:
+
+        1. const inc / res / dec / lab:
+           - Stores references to the Increase, Reset, Decrease buttons and the label showing the count.
+
+        2. let label = 0:
+           - A variable to store the current count, starting at 0.
+
+        3. inc.onclick = function():
+           - When the Increase button is clicked, increment the count by 1 and update the label text.
+
+        4. dec.onclick = function():
+           - When the Decrease button is clicked, decrement the count by 1 and update the label text.
+
+        5. res.onclick = function():
+           - When the Reset button is clicked, set the count back to 0 and update the label text.
+        */
+    </script>
+</body>
+</html>
