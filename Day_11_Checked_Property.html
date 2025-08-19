@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OS Checker</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+        }
+        h1 {
+            color: #333;
+        }
+        label {
+            display: block;
+            margin: 5px 0;
+        }
+        #p1 {
+            margin-top: 20px;
+            font-weight: bold;
+            color: green;
+        }
+        button {
+            margin-top: 15px;
+            padding: 8px 15px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Select Your Operating System</h1>
+
+    <label><input type="checkbox" id="check"> Android</label>
+    <label><input type="checkbox" id="i1"> iOS</label>
+    <label><input type="checkbox" id="i2"> Windows</label>
+    <label><input type="checkbox" id="i3"> Mac</label>
+
+    <button id="btn">Check OS</button>
+    <p id="p1"></p>
+
+    <script>
+        const android = document.getElementById("check");
+        const ios = document.getElementById("i1");
+        const Windows = document.getElementById("i2");
+        const Mac = document.getElementById("i3");
+        const p1 = document.getElementById("p1");
+        const btn = document.getElementById("btn");
+
+        btn.onclick = function () {
+            if (android.checked) {
+                p1.textContent = "Your OS is Android";
+            }
+            else if (ios.checked) {
+                p1.textContent = "Your OS is iOS";
+            }
+            else if (Windows.checked) {
+                p1.textContent = "Your OS is Windows";
+            }
+            else if (Mac.checked) {
+                p1.textContent = "Your OS is Mac";
+            }
+            else {
+                p1.textContent = "Please select an OS!";
+            }
+        }
+
+        /*
+        Explanation of Code:
+
+        1. const android / ios / Windows / Mac:
+           - Stores references to the checkbox input elements.
+
+        2. const p1:
+           - Stores reference to the <p> element where the result will be displayed.
+
+        3. const btn:
+           - Stores reference to the button.
+
+        4. btn.onclick = function() { ... }
+           - Executes whenever the button is clicked.
+
+        5. if (android.checked) { ... }
+           - Checks if "Android" checkbox is selected and displays "Your OS is Android".
+
+        6. else if (...) for iOS, Windows, Mac:
+           - Checks for other checkboxes and displays the selected OS.
+
+        7. else:
+           - If none are selected, shows "Please select an OS!".
+        */
+    </script>
+</body>
+</html>
